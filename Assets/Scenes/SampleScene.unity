@@ -227,8 +227,9 @@ GameObject:
   - component: {fileID: 1277339476}
   - component: {fileID: 1277339475}
   - component: {fileID: 1277339478}
+  - component: {fileID: 1277339479}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Itemsito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,6 +349,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2881e847fbf00614081955e8cc57dd30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1277339479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277339474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b1775cd7482e9a40acaa303d684454e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
 --- !u!1001 &1877152030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -543,6 +557,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c0c6fe0f7a7b594b9b3c434e0551c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!212 &2003175225
 SpriteRenderer:
   m_ObjectHideFlags: 0

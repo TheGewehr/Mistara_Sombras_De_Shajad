@@ -70,7 +70,7 @@ public class FollowClick : MonoBehaviour
         
         if (_agent.isStopped == true && _gameObject != null)
         {
-            _gameObject.GetComponent<IsClickable>().AddToInventory();
+            _gameObject.GetComponent<IsClickable>().ManageInteraction();
 
             _agent.isStopped = false;
             _gameObject = null;

@@ -7,11 +7,12 @@ using UnityEngine.EventSystems;
 public class IsClickable : MonoBehaviour
 {
     Item item = null;
-    //Dialog dialog = null;
+    Dialog dialoge = null;
 
     private void Start()
     {
         item = GetComponent<Item>();
+        dialoge = GetComponent<Dialog>();
     }
 
     void Update()
@@ -26,10 +27,11 @@ public class IsClickable : MonoBehaviour
             AddToInventory();
             return true; 
         }
-        //else if(dialog != null)
-        //{
-        //     return true;
-        //}
+        else if(dialoge != null)
+        {
+            StartDialogue();
+            return true;
+        }
 
         return false;
     }
@@ -41,9 +43,6 @@ public class IsClickable : MonoBehaviour
 
     private bool AddToInventory()
     {
-        // add to inventory
-
-
         //Debug.Log(" Does the component player works: " + GameObject.Find("Player").GetComponent<Player>().inventory[0].itemName); // peta
 
         //Debug.Log(" Inventory Lenght: " + GameObject.Find("Player").GetComponent<Player>().inventory.Length);
@@ -55,13 +54,9 @@ public class IsClickable : MonoBehaviour
                 GameObject.Find("Player").GetComponent<Player>().inventory[i] = item;
                 //Debug.Log(" Does the component player works: " + GameObject.Find("Player").GetComponent<Player>().inventory[i].itemName);
                 break;
-                //break;
             }
-
             //Debug.Log(" Does the component player works: " + GameObject.Find("Player").GetComponent<Player>().inventory[i].itemName);
-        }
-
-        
+        }        
 
         //Destroy(gameObject);
         gameObject.SetActive(false);

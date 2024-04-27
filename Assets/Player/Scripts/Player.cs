@@ -16,16 +16,19 @@ public class Player : MonoBehaviour
     private KarmaType karmaType = KarmaType.NEUTRAL;
 
     // Array of items = Inventory
-    public Item[] inventory = new Item[10];
+    public Item[] inventory;
 
     // Start is called before the first frame update
     void Start()
     {
         karma = 0.495f;
 
-        //for (int i = 0; i < 10; i++)
+        DontDestroyOnLoad(gameObject);
+
+        //for (int i = 0; i < inventory.Length; i++)
         //{
-        //    inventory[i].itemName = "Merkava";
+        //    inventory[i] = new Item();  // Create a new Item instance
+        //    inventory[i].itemName = "default";
         //}
     }
 

@@ -43,19 +43,28 @@ public class IsClickable : MonoBehaviour
     {
         // add to inventory
 
-        //Debug.Log(" Does the component player works: " + GameObject.Find("Player").GetComponent<Player>().inventory[1].itemName); // peta
 
-        //for (int i = 0; i < 10; i++)
-        //{
-        //    if(GameObject.Find("Player").GetComponent<Player>().inventory[i].itemName == null)
-        //    {
-        //        GameObject.Find("Player").GetComponent<Player>().inventory[i] = item;
-        //        break;
-        //        //break;
-        //    }            
-        //}
+        //Debug.Log(" Does the component player works: " + GameObject.Find("Player").GetComponent<Player>().inventory[0].itemName); // peta
 
-        Destroy(gameObject);
+        //Debug.Log(" Inventory Lenght: " + GameObject.Find("Player").GetComponent<Player>().inventory.Length);
+
+        for (int i = 0; i < GameObject.Find("Player").GetComponent<Player>().inventory.Length; i++)
+        {
+            if(GameObject.Find("Player").GetComponent<Player>().inventory[i] == null)
+            {
+                GameObject.Find("Player").GetComponent<Player>().inventory[i] = item;
+                //Debug.Log(" Does the component player works: " + GameObject.Find("Player").GetComponent<Player>().inventory[i].itemName);
+                break;
+                //break;
+            }
+
+            //Debug.Log(" Does the component player works: " + GameObject.Find("Player").GetComponent<Player>().inventory[i].itemName);
+        }
+
+        
+
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
 
         return true;
     }

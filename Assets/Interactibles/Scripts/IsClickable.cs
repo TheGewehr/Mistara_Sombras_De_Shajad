@@ -7,12 +7,12 @@ using UnityEngine.EventSystems;
 public class IsClickable : MonoBehaviour
 {
     Item item = null;
-    Dialog dialoge = null;
+    DialogManager dialog = null;
 
     private void Start()
     {
         item = GetComponent<Item>();
-        dialoge = GetComponent<Dialog>();
+        dialog = GetComponent<DialogManager>();
     }
 
     void Update()
@@ -27,7 +27,7 @@ public class IsClickable : MonoBehaviour
             AddToInventory();
             return true; 
         }
-        else if(dialoge != null)
+        else if(dialog != null)
         {
             StartDialogue();
             return true;
@@ -38,6 +38,9 @@ public class IsClickable : MonoBehaviour
 
     private bool StartDialogue()
     {
+        GetComponent<DialogManager>().enabled = true;
+        enabled = false;
+
         return true;
     }
 

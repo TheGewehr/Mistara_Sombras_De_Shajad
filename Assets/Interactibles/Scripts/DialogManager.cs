@@ -14,7 +14,9 @@ public class Dialog
 public class Responses
 {
     public string responseText = "Default Response Text";
-    public int nextDialogIndex = 0;
+    public int neutralNextDialogIndex = 0;
+    public int badNextDialogIndex = 0;
+    public int goodNextDialogIndex = 0;
     public bool isFinalResponse = false;
     public float sumToKarma = 0.0f;
 }
@@ -22,7 +24,7 @@ public class Responses
 public class DialogManager : MonoBehaviour
 {
     public List<Dialog> dialogs = new List<Dialog>();
-    private int currentDialogIndex = 0;
+    private int currentDialogIndex = 0; // 0 es siempre el primero
 
     public Canvas canvas;
     private TextMeshProUGUI dialogText;
@@ -95,7 +97,22 @@ public class DialogManager : MonoBehaviour
             {
                 responseButtons[i].gameObject.SetActive(true);
                 responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = currentDialog.responses[i].responseText;
-                int nextDialogIndex = currentDialog.responses[i].nextDialogIndex;
+
+                int nextDialogIndex = 1;
+
+                if (GameObject.Find("Player").GetComponent<Player>().GetKarma() == KarmaType.NEUTRAL)
+                {
+                    nextDialogIndex = currentDialog.responses[i].neutralNextDialogIndex;
+                }
+                else if(GameObject.Find("Player").GetComponent<Player>().GetKarma() == KarmaType.GOOD)
+                {
+                    nextDialogIndex = currentDialog.responses[i].goodNextDialogIndex;
+                }
+                else if(GameObject.Find("Player").GetComponent<Player>().GetKarma() == KarmaType.BAD)
+                {
+                    nextDialogIndex = currentDialog.responses[i].badNextDialogIndex;
+                }                
+
                 bool finalResponse = currentDialog.responses[i].isFinalResponse;
                 float karmaVariation = currentDialog.responses[i].sumToKarma;
 
@@ -129,6 +146,7 @@ public class DialogManager : MonoBehaviour
         }
         else
         {
+            GameObject.Find("Player").GetComponent<Player>().AddKarma(karmaVariation);
             ShowDialog(nextDialogIndex);
         }
     }

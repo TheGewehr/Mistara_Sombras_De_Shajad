@@ -975,17 +975,39 @@ MonoBehaviour:
   - text: Quieres Webos?
     responses:
     - responseText: Joder, probablemente
-      nextDialogIndex: 0
+      neutralNextDialogIndex: 0
+      badNextDialogIndex: 0
+      goodNextDialogIndex: 0
       isFinalResponse: 1
       sumToKarma: 0
     - responseText: No!
-      nextDialogIndex: 1
+      neutralNextDialogIndex: 1
+      badNextDialogIndex: 2
+      goodNextDialogIndex: 3
       isFinalResponse: 0
-      sumToKarma: 0
+      sumToKarma: 1
   - text: Venga hombre, estan calientes
     responses:
     - responseText: Venga va
-      nextDialogIndex: 1
+      neutralNextDialogIndex: 1
+      badNextDialogIndex: 1
+      goodNextDialogIndex: 1
+      isFinalResponse: 1
+      sumToKarma: 0
+  - text: Eres un Cabron
+    responses:
+    - responseText: Vete a la mierda
+      neutralNextDialogIndex: 2
+      badNextDialogIndex: 2
+      goodNextDialogIndex: 2
+      isFinalResponse: 1
+      sumToKarma: 0
+  - text: Chupapi muyayo
+    responses:
+    - responseText: UWU baby
+      neutralNextDialogIndex: 3
+      badNextDialogIndex: 3
+      goodNextDialogIndex: 3
       isFinalResponse: 1
       sumToKarma: 0
   canvas: {fileID: 1265734078}

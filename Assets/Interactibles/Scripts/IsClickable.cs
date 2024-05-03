@@ -38,8 +38,11 @@ public class IsClickable : MonoBehaviour
 
     private bool StartDialogue()
     {
-        GetComponent<DialogManager>().enabled = true;
+        DialogManager dialogManager = GetComponent<DialogManager>();
+        dialogManager.enabled = true;
+        dialogManager.InitializeDialogUI();  // Make sure to call this to setup dialog again
         enabled = false;
+        GameObject.Find("Player").GetComponent<FollowClick>().enabled = false;
 
         return true;
     }

@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEditor.Progress;
 
-public class Player : MonoBehaviour
+enum KarmaType
 {
-    enum KarmaType
-    {
-        GOOD,
-        NEUTRAL,
-        BAD
-    }
+    GOOD,
+    NEUTRAL,
+    BAD
+}
+
+public class Player : MonoBehaviour
+{    
 
     private float karma = 0.495f;
     private KarmaType karmaType = KarmaType.NEUTRAL;
@@ -49,7 +50,7 @@ public class Player : MonoBehaviour
         }       
     }
 
-    void AddKarma(float value)
+    public void AddKarma(float value)
     {
         karma += value;
 

@@ -972,17 +972,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogs:
-  - text: eg4eg
+  - text: Quieres Webos?
     responses:
-    - responseText: remops
+    - responseText: Joder, probablemente
+      nextDialogIndex: 0
+      isFinalResponse: 1
+      sumToKarma: 0
+    - responseText: No!
       nextDialogIndex: 1
-    - responseText: lekops
-      nextDialogIndex: 2
-  - text: sops
-    responses: []
-  - text: lulis
-    responses: []
-  currentDialogIndex: 0
+      isFinalResponse: 0
+      sumToKarma: 0
+  - text: Venga hombre, estan calientes
+    responses:
+    - responseText: Venga va
+      nextDialogIndex: 1
+      isFinalResponse: 1
+      sumToKarma: 0
   canvas: {fileID: 1265734078}
 --- !u!1 &2003175221
 GameObject:

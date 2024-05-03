@@ -1,40 +1,57 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // Import the TMPro namespace if using TextMeshPro for UI
+using TMPro;
 
 [System.Serializable]
 public class Dialog
 {
-    public string text;
+    public string text = "Default Dialog Text";
     public List<Responses> responses;
 }
 
 [System.Serializable]
 public class Responses
 {
-    public string responseText;
-    public int nextDialogIndex;
+    public string responseText = "Default Response Text";
+    public int nextDialogIndex = 0;
+    public bool isFinalResponse = false;
+    public float sumToKarma = 0.0f;
 }
 
 public class DialogManager : MonoBehaviour
 {
     public List<Dialog> dialogs = new List<Dialog>();
-    public int currentDialogIndex = 0;
+    private int currentDialogIndex = 0;
 
-    public Canvas canvas; // Reference to the Canvas
-    private TextMeshProUGUI dialogText; // Using TextMeshPro for better text appearance
-    private List<Button> responseButtons = new List<Button>(); // A list to store buttons dynamically
+    public Canvas canvas;
+    private TextMeshProUGUI dialogText;
+    private List<Button> responseButtons = new List<Button>();
 
     private void Start()
     {
+        InitializeDialogUI();
+    }
+
+    public void InitializeDialogUI()
+    {
+        // Destroy previous dialog UI elements if they exist
+        if (dialogText != null) Destroy(dialogText.gameObject);
+        foreach (Button button in responseButtons)
+        {
+            if (button != null)
+            {
+                Destroy(button.gameObject);
+            }
+        }
+        responseButtons.Clear();
+
         CreateDialogUI();
         ShowDialog(currentDialogIndex);
     }
 
     void CreateDialogUI()
     {
-        // Create the dialog text component dynamically
         GameObject textObj = new GameObject("DialogText");
         textObj.transform.SetParent(canvas.transform, false);
         dialogText = textObj.AddComponent<TextMeshProUGUI>();
@@ -44,8 +61,7 @@ public class DialogManager : MonoBehaviour
         dialogText.rectTransform.anchoredPosition = new Vector2(0, 100);
         dialogText.rectTransform.sizeDelta = new Vector2(600, 200);
 
-        // Create buttons based on the maximum number of responses we might need
-        for (int i = 0; i < 4; i++) // Assume max 4 responses for example
+        for (int i = 0; i < 4; i++)
         {
             GameObject buttonObj = new GameObject("ResponseButton" + i);
             buttonObj.transform.SetParent(canvas.transform, false);
@@ -58,7 +74,6 @@ public class DialogManager : MonoBehaviour
             buttonText.alignment = TextAlignmentOptions.Center;
             buttonObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -100 - 50 * i);
             buttonObj.GetComponent<RectTransform>().sizeDelta = new Vector2(200, 40);
-            button.onClick.AddListener(() => Debug.Log("Clicked Button " + i)); // Placeholder listener
             responseButtons.Add(button);
         }
     }
@@ -71,11 +86,9 @@ public class DialogManager : MonoBehaviour
             return;
         }
 
-        currentDialogIndex = index;
         Dialog currentDialog = dialogs[index];
         dialogText.text = currentDialog.text;
 
-        // Update and show buttons based on current dialog responses
         for (int i = 0; i < responseButtons.Count; i++)
         {
             if (i < currentDialog.responses.Count)
@@ -83,13 +96,40 @@ public class DialogManager : MonoBehaviour
                 responseButtons[i].gameObject.SetActive(true);
                 responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = currentDialog.responses[i].responseText;
                 int nextDialogIndex = currentDialog.responses[i].nextDialogIndex;
+                bool finalResponse = currentDialog.responses[i].isFinalResponse;
+                float karmaVariation = currentDialog.responses[i].sumToKarma;
+
                 responseButtons[i].onClick.RemoveAllListeners();
-                responseButtons[i].onClick.AddListener(() => ShowDialog(nextDialogIndex));
+                responseButtons[i].onClick.AddListener(() => HandleResponse(nextDialogIndex, finalResponse, karmaVariation));
             }
             else
             {
                 responseButtons[i].gameObject.SetActive(false);
             }
+        }
+    }
+
+    void HandleResponse(int nextDialogIndex, bool isFinalResponse, float karmaVariation)
+    {
+        if (isFinalResponse)
+        {
+            foreach (Button button in responseButtons)
+            {
+                if (button != null)
+                {
+                    Destroy(button.gameObject);
+                }
+            }
+            Destroy(dialogText.gameObject);
+            this.enabled = false;
+            GameObject.Find("Player").GetComponent<Player>().AddKarma(karmaVariation);
+            GameObject.Find("Player").GetComponent<FollowClick>().enabled = true;
+            GetComponent<IsClickable>().enabled = true;
+            currentDialogIndex = nextDialogIndex;
+        }
+        else
+        {
+            ShowDialog(nextDialogIndex);
         }
     }
 }

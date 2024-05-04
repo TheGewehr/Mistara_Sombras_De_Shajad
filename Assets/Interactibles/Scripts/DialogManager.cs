@@ -96,28 +96,14 @@ public class DialogManager : MonoBehaviour
             if (i < currentDialog.responses.Count)
             {
                 responseButtons[i].gameObject.SetActive(true);
-                responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = currentDialog.responses[i].responseText;
+                var response = currentDialog.responses[i];
+                responseButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = response.responseText;
 
-                int nextDialogIndex = 1;
-
-                if (GameObject.Find("Player").GetComponent<Player>().GetKarma() == KarmaType.NEUTRAL)
-                {
-                    nextDialogIndex = currentDialog.responses[i].neutralNextDialogIndex;
-                }
-                else if(GameObject.Find("Player").GetComponent<Player>().GetKarma() == KarmaType.GOOD)
-                {
-                    nextDialogIndex = currentDialog.responses[i].goodNextDialogIndex;
-                }
-                else if(GameObject.Find("Player").GetComponent<Player>().GetKarma() == KarmaType.BAD)
-                {
-                    nextDialogIndex = currentDialog.responses[i].badNextDialogIndex;
-                }                
-
-                bool finalResponse = currentDialog.responses[i].isFinalResponse;
-                float karmaVariation = currentDialog.responses[i].sumToKarma;
+                bool finalResponse = response.isFinalResponse;
+                float karmaVariation = response.sumToKarma;
 
                 responseButtons[i].onClick.RemoveAllListeners();
-                responseButtons[i].onClick.AddListener(() => HandleResponse(nextDialogIndex, finalResponse, karmaVariation));
+                responseButtons[i].onClick.AddListener(() => HandleResponse(response, finalResponse, karmaVariation));
             }
             else
             {
@@ -126,8 +112,26 @@ public class DialogManager : MonoBehaviour
         }
     }
 
-    void HandleResponse(int nextDialogIndex, bool isFinalResponse, float karmaVariation)
+
+    void HandleResponse(Responses response, bool isFinalResponse, float karmaVariation)
     {
+        GameObject.Find("Player").GetComponent<Player>().AddKarma(karmaVariation);
+
+        int nextDialogIndex;
+        var playerKarma = GameObject.Find("Player").GetComponent<Player>().GetKarma();
+        if (playerKarma == KarmaType.NEUTRAL)
+        {
+            nextDialogIndex = response.neutralNextDialogIndex;
+        }
+        else if (playerKarma == KarmaType.GOOD)
+        {
+            nextDialogIndex = response.goodNextDialogIndex;
+        }
+        else // Assuming BAD Karma
+        {
+            nextDialogIndex = response.badNextDialogIndex;
+        }
+
         if (isFinalResponse)
         {
             foreach (Button button in responseButtons)
@@ -139,15 +143,13 @@ public class DialogManager : MonoBehaviour
             }
             Destroy(dialogText.gameObject);
             this.enabled = false;
-            GameObject.Find("Player").GetComponent<Player>().AddKarma(karmaVariation);
             GameObject.Find("Player").GetComponent<FollowClick>().enabled = true;
             GetComponent<IsClickable>().enabled = true;
-            currentDialogIndex = nextDialogIndex;
         }
         else
         {
-            GameObject.Find("Player").GetComponent<Player>().AddKarma(karmaVariation);
             ShowDialog(nextDialogIndex);
         }
     }
+
 }

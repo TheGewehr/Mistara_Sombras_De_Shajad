@@ -50,14 +50,27 @@ public class Player : MonoBehaviour
         }
 
         //AddKarma(0.01f);
-        Debug.Log("Karma Value: " + karma + ", Karma Type: " + karmaType);
+        //Debug.Log("Karma Value: " + karma + ", Karma Type: " + karmaType);
     }
 
     public void AddKarma(float value)
     {
         karma += value;
 
-        if(karma < 0.0f)
+        if (karma > 0.666f)
+        {
+            karmaType = KarmaType.GOOD;
+        }
+        else if (karma < 0.333f)
+        {
+            karmaType = KarmaType.BAD;
+        }
+        else
+        {
+            karmaType = KarmaType.NEUTRAL;
+        }
+
+        if (karma < 0.0f)
         {
             karma = 0.0f;
         }

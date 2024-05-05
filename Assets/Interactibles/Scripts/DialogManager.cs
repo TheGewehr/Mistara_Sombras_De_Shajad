@@ -145,6 +145,7 @@ public class DialogManager : MonoBehaviour
             this.enabled = false;
             GameObject.Find("Player").GetComponent<FollowClick>().enabled = true;
             GetComponent<IsClickable>().enabled = true;
+            currentDialogIndex = nextDialogIndex;
         }
         else
         {

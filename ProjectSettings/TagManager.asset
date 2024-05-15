@@ -47,3 +47,6 @@ TagManager:
   - name: Gameplay
     uniqueID: 1390149417
     locked: 0
+  - name: Foreground
+    uniqueID: 1312780867
+    locked: 0

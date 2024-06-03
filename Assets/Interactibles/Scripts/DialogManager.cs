@@ -27,17 +27,32 @@ public class DialogManager : MonoBehaviour
     private int currentDialogIndex = 0; // 0 es siempre el primero
 
     public Canvas canvas;
+    public TMP_FontAsset customFont;
+    public Sprite backgroundSprite;
+    private float backgroundWidth = 800f; // Width of the background
+    private float backgroundHeight = 800f; // Height of the background
     private TextMeshProUGUI dialogText;
     private List<Button> responseButtons = new List<Button>();
+    private GameObject backgroundObj; // Reference to the background GameObject
 
     private void Start()
     {
+        if (customFont == null)
+        {
+            customFont = Resources.Load<TMP_FontAsset>("Sprite Comic"); // Ensure the font asset is named "DefaultFont" and placed in Resources folder
+        }
+        if (backgroundSprite == null)
+        {
+            backgroundSprite = Resources.Load<Sprite>("UI_Dialogo"); // Ensure the sprite is named "DefaultBackground" and placed in Resources folder
+        }
+
         InitializeDialogUI();
     }
 
     public void InitializeDialogUI()
     {
         // Destroy previous dialog UI elements if they exist
+        if (backgroundObj != null) Destroy(backgroundObj);
         if (dialogText != null) Destroy(dialogText.gameObject);
         foreach (Button button in responseButtons)
         {
@@ -54,19 +69,31 @@ public class DialogManager : MonoBehaviour
 
     void CreateDialogUI()
     {
+        // Create the background GameObject
+        backgroundObj = new GameObject("DialogBackground");
+        backgroundObj.transform.SetParent(canvas.transform, false);
+        Image backgroundImage = backgroundObj.AddComponent<Image>();
+        backgroundImage.sprite = backgroundSprite; // Assign the background sprite
+        backgroundImage.rectTransform.sizeDelta = new Vector2(backgroundWidth, backgroundHeight); // Set the size of the background
+        backgroundImage.rectTransform.anchoredPosition = new Vector2(0, 0); // Position the background
+        //backgroundImage.rectTransform.position = new Vector2(0, 0);
+
+        // Create the dialog text GameObject
         GameObject textObj = new GameObject("DialogText");
-        textObj.transform.SetParent(canvas.transform, false);
+        textObj.transform.SetParent(backgroundObj.transform, false); // Set the background as the parent
         dialogText = textObj.AddComponent<TextMeshProUGUI>();
         dialogText.fontSize = 24;
         dialogText.color = Color.black;
         dialogText.alignment = TextAlignmentOptions.Center;
-        dialogText.rectTransform.anchoredPosition = new Vector2(0, 100);
+        dialogText.rectTransform.anchoredPosition = new Vector2(0, 200);
         dialogText.rectTransform.sizeDelta = new Vector2(600, 200);
+        dialogText.font = customFont;  // Assigning the custom font to dialog text
 
+        // Create the response buttons
         for (int i = 0; i < 4; i++)
         {
             GameObject buttonObj = new GameObject("ResponseButton" + i);
-            buttonObj.transform.SetParent(canvas.transform, false);
+            buttonObj.transform.SetParent(backgroundObj.transform, false); // Set the background as the parent
             Button button = buttonObj.AddComponent<Button>();
             TextMeshProUGUI buttonText = buttonObj.AddComponent<TextMeshProUGUI>();
             button.targetGraphic = buttonText;
@@ -74,8 +101,9 @@ public class DialogManager : MonoBehaviour
             buttonText.fontSize = 20;
             buttonText.color = Color.white;
             buttonText.alignment = TextAlignmentOptions.Center;
-            buttonObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -100 - 50 * i);
-            buttonObj.GetComponent<RectTransform>().sizeDelta = new Vector2(200, 40);
+            buttonText.font = customFont;  // Assigning the custom font to button text
+            buttonObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(0,  - 50 * i * 3.5f);
+            buttonObj.GetComponent<RectTransform>().sizeDelta = new Vector2(200, 60);
             responseButtons.Add(button);
         }
     }
@@ -112,7 +140,6 @@ public class DialogManager : MonoBehaviour
         }
     }
 
-
     void HandleResponse(Responses response, bool isFinalResponse, float karmaVariation)
     {
         GameObject.Find("Player").GetComponent<Player>().AddKarma(karmaVariation);
@@ -142,6 +169,10 @@ public class DialogManager : MonoBehaviour
                 }
             }
             Destroy(dialogText.gameObject);
+            if (backgroundObj != null)
+            {
+                Destroy(backgroundObj);
+            }
             this.enabled = false;
             GameObject.Find("Player").GetComponent<FollowClick>().enabled = true;
             GetComponent<IsClickable>().enabled = true;
@@ -152,5 +183,4 @@ public class DialogManager : MonoBehaviour
             ShowDialog(nextDialogIndex);
         }
     }
-
 }

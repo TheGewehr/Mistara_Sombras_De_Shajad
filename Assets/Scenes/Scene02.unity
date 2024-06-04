@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 132258709}
   - component: {fileID: 132258708}
   m_Layer: 0
-  m_Name: Obstacle (5)
+  m_Name: Tiendas (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 290002401}
   - component: {fileID: 290002400}
   m_Layer: 0
-  m_Name: Obstacle (7)
+  m_Name: Tiendas (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2210,7 +2210,7 @@ GameObject:
   - component: {fileID: 937733845}
   - component: {fileID: 937733844}
   m_Layer: 0
-  m_Name: Obstacle (6)
+  m_Name: Tiendas (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3036,7 +3036,7 @@ GameObject:
   - component: {fileID: 1326077174}
   - component: {fileID: 1326077173}
   m_Layer: 0
-  m_Name: Obstacle (4)
+  m_Name: 'Tiendas '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

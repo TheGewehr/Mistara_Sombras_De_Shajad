@@ -8,11 +8,15 @@ public class IsClickable : MonoBehaviour
 {
     Item item = null;
     DialogManager dialog = null;
+    OpenWithItem openWithItem = null;
+    GetItemWithItem getItemWithItem = null;
 
     private void Start()
     {
         item = GetComponent<Item>();
         dialog = GetComponent<DialogManager>();
+        openWithItem = GetComponent<OpenWithItem>();
+        getItemWithItem = GetComponent<GetItemWithItem>();
     }
 
     void Update()
@@ -32,6 +36,16 @@ public class IsClickable : MonoBehaviour
             StartDialogue();
             return true;
         }
+        else if(openWithItem != null)
+        {
+            EnableOpenWithItem();
+            return true;
+        }
+        else if (getItemWithItem != null)
+        {
+            EnableGetItemWithItem();
+            return true;
+        }
 
         return false;
     }
@@ -43,6 +57,26 @@ public class IsClickable : MonoBehaviour
         dialogManager.InitializeDialogUI();  // Make sure to call this to setup dialog again
         enabled = false;
         GameObject.Find("Player").GetComponent<FollowClick>().enabled = false;
+
+        return true;
+    }
+
+    private bool EnableOpenWithItem()
+    {
+        OpenWithItem dialogManager = GetComponent<OpenWithItem>();
+        dialogManager.enabled = true;
+        //dialogManager.InitializeDialogUI();  // Make sure to call this to setup dialog again
+        enabled = false;
+
+        return true;
+    }
+
+    private bool EnableGetItemWithItem()
+    {
+        GetItemWithItem dialogManager = GetComponent<GetItemWithItem>();
+        dialogManager.enabled = true;
+        //dialogManager.InitializeDialogUI();  // Make sure to call this to setup dialog again
+        enabled = false;
 
         return true;
     }

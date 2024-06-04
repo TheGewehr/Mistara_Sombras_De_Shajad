@@ -2,12 +2,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using static UnityEditor.Progress;
 
 [System.Serializable]
 public class Dialog
 {
     public string text = "Default Dialog Text";
     public List<Responses> responses;
+}
+
+[System.Serializable]
+public class ItemCondition
+{
+    public Item conditionItem;
+    public int newDialogIndex;
 }
 
 [System.Serializable]
@@ -19,10 +27,13 @@ public class Responses
     public int goodNextDialogIndex = 0;
     public bool isFinalResponse = false;
     public float sumToKarma = 0.0f;
+    public string nameOfRetreivedItem;
+    public Item itemAddedToInventory;
 }
 
 public class DialogManager : MonoBehaviour
 {
+    public List<ItemCondition> itemConditions = new List<ItemCondition>();
     public List<Dialog> dialogs = new List<Dialog>();
     private int currentDialogIndex = 0; // 0 es siempre el primero
 
@@ -44,6 +55,21 @@ public class DialogManager : MonoBehaviour
         if (backgroundSprite == null)
         {
             backgroundSprite = Resources.Load<Sprite>("UI_Dialogo"); // Ensure the sprite is named "DefaultBackground" and placed in Resources folder
+        }
+
+        for(int i = 0; i < itemConditions.Count; i++)
+        {
+            if (itemConditions[i] != null)
+            {
+                for (int j = 0; j < GameObject.Find("Player").GetComponent<Player>().inventory.Length; j++)
+                {
+                    if (GameObject.Find("Player").GetComponent<Player>().inventory[j] == itemConditions[i].conditionItem)
+                    {
+                        currentDialogIndex = itemConditions[i].newDialogIndex;
+                        break;
+                    }
+                }
+            }
         }
 
         InitializeDialogUI();
@@ -182,5 +208,33 @@ public class DialogManager : MonoBehaviour
         {
             ShowDialog(nextDialogIndex);
         }
+
+        if (response.nameOfRetreivedItem != null)
+        {
+            for (int i = 0; i < GameObject.Find("Player").GetComponent<Player>().inventory.Length; i++)
+            {
+                if (GameObject.Find("Player").GetComponent<Player>().inventory[i].itemName == response.nameOfRetreivedItem)
+                {
+                    GameObject.Find("Player").GetComponent<Player>().inventory[i] = null;
+                    break;
+                }
+            }           
+
+            //gameObject.SetActive(false);
+        }
+
+        if(response.itemAddedToInventory != null)
+        {
+            for (int i = 0; i < GameObject.Find("Player").GetComponent<Player>().inventory.Length; i++)
+            {
+                if (GameObject.Find("Player").GetComponent<Player>().inventory[i] == null)
+                {
+                    GameObject.Find("Player").GetComponent<Player>().inventory[i] = response.itemAddedToInventory;                    
+                    break;
+                }
+            }
+
+            //gameObject.SetActive(false);
+        }        
     }
 }

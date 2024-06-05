@@ -1690,75 +1690,86 @@ PrefabInstance:
       objectReference: {fileID: 1265734078}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].text
-      value: El contenedor se mueve haciendo ruido
+      value: "\xBFBuscas algo humana?"
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[1].text
-      value: Hissss hissss
+      value: "(sonr\xEDe) La f\xE1brica de aut\xF3matas es un lugar peligroso y bien
+        protegido. No suelo compartir esa clase de informaci\xF3n as\xED como as\xED\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].text
-      value: Yessssshhhh. Quishas podriash ayudarme un poco, por favor.
+      value: "(mirando a Watts con curiosidad) Un anfiuma, interesante\u2026 Muy
+        bien, hay algo que necesito. Un objeto valioso que Aelric guarda en su tienda,
+        aqu\xED en el mercado. "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].text
-      value: Ni yo she que shoy. Eshtoy un poco mareado...
+      value: "Un amuleto antiguo, imbuido con magia enana. Lo reconocer\xE1s por
+        su brillo azul y los grabados r\xFAnicos. "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].text
-      value: "\xBFEra eso un insulto?"
+      value: "Tampoco esperar\xE1s que os haga todo el trabajo, \xBFno? "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[5].text
-      value: "AH. MUCHAS GRACIAS. Igualmente, \xBFpodr\xEDas ayudarme por favor?"
+      value: "\xA1No tan r\xE1pido! Aelric no es f\xE1cil de convencer. Es codicioso
+        y desconfiado. Pero quiz\xE1s podr\xEDais\u2026 persuadirlo de alguna manera. "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].text
-      value: Feo o no sigo teniendo sentimientos...
+      value: "(seriamente) Entonces no tendr\xE1s la informaci\xF3n que buscas. Y
+        cr\xE9eme, por estos alrededores no es f\xE1cil conseguir este tipo de informaci\xF3n. "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[7].text
-      value: "Podr\xEDas, POR FAVOR, AYUDARME??"
+      value: "Pod\xE9is confiar en m\xED. Volved con el amuleto y tendr\xE9is vuestra
+        informaci\xF3n."
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[8].text
-      value: "Podr\xEDas, POR FAVOR, AYUDARME??"
+      value: "\xBFA\xFAn no teneis el amuleto? VA, RAPIDITO."
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].responses.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[1].responses.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
-      propertyPath: dialogs.Array.data[4].responses.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[4].responses.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[5].responses.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[7].responses.Array.size
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[8].responses.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].responses.Array.data[1].sumToKarma
@@ -1766,7 +1777,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].responses.Array.data[0].responseText
-      value: "Ho....hola?? Hay alguien ah\xED?"
+      value: "(susurrando) S\xED, estamos buscando informaci\xF3n sobre como entrar
+        a la f\xE1brica de aut\xF3matas. Me han dicho que podr\xEDas ayudarnos. "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].responses.Array.data[1].responseText
@@ -1774,7 +1786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[1].responses.Array.data[0].responseText
-      value: Estas bien?
+      value: " \xBFQu\xE9 pides a cambio? Estamos dispuestos a negociar. "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[1].responses.Array.data[1].responseText
@@ -1782,7 +1794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[0].responseText
-      value: Ayudar a Watts
+      value: "\xBFQu\xE9 clase de objeto? "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[1].responseText
@@ -1790,23 +1802,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[0].responseText
-      value: Casi que mejor que no lo sepas
+      value: " \xBFAlg\xFAn consejo sobre c\xF3mo obtenerlo? "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[1].responseText
-      value: Interesante eres, eso seguro
+      value: "Perfecto. \xA1Muchas gracias! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[3].responses.Array.data[2].responseText
+      value: "\xBFY si no confiamos en ti? "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[0].responseText
-      value: "Que va, no lo dec\xEDa de esa manera(ayudar a Watts)"
+      value: Ah. Claro.
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[1].responseText
-      value: "Me refer\xEDa a que no hab\xEDa visto a algo tan....viscoso."
+      value: "Perfecto. \xA1Muchas gracias! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[4].responses.Array.data[2].responseText
+      value: "\xBFY si no confiamos en ti? "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[5].responses.Array.data[0].responseText
-      value: Ayudar a Watts
+      value: 'Muy bien, conseguiremos el amuleto. '
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[5].responses.Array.data[1].responseText
@@ -1814,7 +1834,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.data[0].responseText
-      value: No decir nada y ayudar a Watts
+      value: "Est\xE1 bien, conseguiremos el amuleto. Pero no juegues con nosotros,
+        Neodora. Esperamos que cumplas tu parte del trato. "
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.data[1].responseText
@@ -1822,11 +1843,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[7].responses.Array.data[0].responseText
-      value: Ayudar a Watts
+      value: Okay,
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[7].responses.Array.data[1].responseText
       value: Salir corriendo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[8].responses.Array.data[0].responseText
+      value: Vamos. (Bajo) Borde...
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].responses.Array.data[0].isFinalResponse
@@ -1838,7 +1863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[0].isFinalResponse
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[0].isFinalResponse
@@ -1858,7 +1883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.data[0].isFinalResponse
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.data[1].isFinalResponse
@@ -1866,10 +1891,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[7].responses.Array.data[0].isFinalResponse
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[7].responses.Array.data[1].isFinalResponse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[8].responses.Array.data[0].isFinalResponse
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
@@ -1890,7 +1919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[0].badNextDialogIndex
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[1].badNextDialogIndex
@@ -1898,23 +1927,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[0].badNextDialogIndex
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
-      propertyPath: dialogs.Array.data[3].responses.Array.data[1].badNextDialogIndex
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[3].responses.Array.data[1].badNextDialogIndex
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[3].responses.Array.data[2].badNextDialogIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[0].badNextDialogIndex
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[1].badNextDialogIndex
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[4].responses.Array.data[2].badNextDialogIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[5].responses.Array.data[0].badNextDialogIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[6].responses.Array.data[0].badNextDialogIndex
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.data[1].badNextDialogIndex
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[7].responses.Array.data[0].badNextDialogIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[8].responses.Array.data[0].badNextDialogIndex
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].responses.Array.data[0].goodNextDialogIndex
@@ -1934,7 +1987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[0].goodNextDialogIndex
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[1].goodNextDialogIndex
@@ -1942,23 +1995,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[0].goodNextDialogIndex
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
-      propertyPath: dialogs.Array.data[3].responses.Array.data[1].goodNextDialogIndex
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[3].responses.Array.data[1].goodNextDialogIndex
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[3].responses.Array.data[2].goodNextDialogIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[0].goodNextDialogIndex
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[1].goodNextDialogIndex
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[4].responses.Array.data[2].goodNextDialogIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[5].responses.Array.data[0].goodNextDialogIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[6].responses.Array.data[0].goodNextDialogIndex
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.data[1].goodNextDialogIndex
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[7].responses.Array.data[0].goodNextDialogIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[8].responses.Array.data[0].goodNextDialogIndex
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].responses.Array.data[0].neutralNextDialogIndex
@@ -1978,7 +2055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[0].neutralNextDialogIndex
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[1].neutralNextDialogIndex
@@ -1986,28 +2063,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[0].neutralNextDialogIndex
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
-      propertyPath: dialogs.Array.data[3].responses.Array.data[1].neutralNextDialogIndex
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[3].responses.Array.data[1].neutralNextDialogIndex
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[3].responses.Array.data[2].neutralNextDialogIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[0].neutralNextDialogIndex
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[1].neutralNextDialogIndex
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[4].responses.Array.data[2].neutralNextDialogIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[5].responses.Array.data[0].neutralNextDialogIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[6].responses.Array.data[0].neutralNextDialogIndex
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.data[1].neutralNextDialogIndex
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[7].responses.Array.data[0].neutralNextDialogIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[8].responses.Array.data[0].neutralNextDialogIndex
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2468059182384803679, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e611b0b7ec9d8214184b9f00c8ba5586, type: 3}
+      objectReference: {fileID: 21300000, guid: 4f08ecc1c6fa86542aba6303bf54c5af, type: 3}
     - target: {fileID: 2468059182384803679, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_Color.b
       value: 0.93667316
@@ -2022,11 +2123,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239670625857458674, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_Size.x
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6239670625857458674, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_Size.y
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6239670625857458674, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_Direction
@@ -2054,11 +2155,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8349906260244017938, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.94
+      value: -15.12
       objectReference: {fileID: 0}
     - target: {fileID: 8349906260244017938, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.89
+      value: 5.65
       objectReference: {fileID: 0}
     - target: {fileID: 8349906260244017938, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2066,19 +2167,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8349906260244017938, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8349906260244017938, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8349906260244017938, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8349906260244017938, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.70710677
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8349906260244017938, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2090,7 +2191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8349906260244017938, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

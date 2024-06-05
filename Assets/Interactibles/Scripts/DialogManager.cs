@@ -125,7 +125,7 @@ public class DialogManager : MonoBehaviour
             button.targetGraphic = buttonText;
             buttonText.text = "Option " + (i + 1);
             buttonText.fontSize = 20;
-            buttonText.color = Color.white;
+            buttonText.color = Color.black;
             buttonText.alignment = TextAlignmentOptions.Center;
             buttonText.font = customFont;  // Assigning the custom font to button text
             buttonObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(0,  - 50 * i * 3.5f);

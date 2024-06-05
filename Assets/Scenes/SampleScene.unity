@@ -1165,6 +1165,14 @@ PrefabInstance:
       propertyPath: backgroundSprite
       value: 
       objectReference: {fileID: 21300000, guid: c6c55545b7262ea4883a7748021de846, type: 3}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[0].responses.Array.data[0].nameOfRetreivedItem
+      value: Kanada
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[0].responses.Array.data[0].itemAddedToInventory
+      value: 
+      objectReference: {fileID: 26742413}
     - target: {fileID: 7499851808850392411, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_Name
       value: Dialogador

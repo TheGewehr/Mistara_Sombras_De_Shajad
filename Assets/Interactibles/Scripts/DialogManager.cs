@@ -27,7 +27,7 @@ public class Responses
     public int goodNextDialogIndex = 0;
     public bool isFinalResponse = false;
     public float sumToKarma = 0.0f;
-    public string nameOfRetreivedItem;
+    public string nameOfRetreivedItem = null;
     public Item itemAddedToInventory;
 }
 
@@ -45,6 +45,7 @@ public class DialogManager : MonoBehaviour
     private TextMeshProUGUI dialogText;
     private List<Button> responseButtons = new List<Button>();
     private GameObject backgroundObj; // Reference to the background GameObject
+    private string nameOfRetreivedItemDialog = null;
 
     private void Start()
     {
@@ -205,6 +206,8 @@ public class DialogManager : MonoBehaviour
             nextDialogIndex = response.badNextDialogIndex;
         }
 
+        nameOfRetreivedItemDialog = response.nameOfRetreivedItem;
+
         if (isFinalResponse)
         {
             foreach (Button button in responseButtons)
@@ -229,19 +232,19 @@ public class DialogManager : MonoBehaviour
             ShowDialog(nextDialogIndex);
         }
 
-        if (response.nameOfRetreivedItem != null)
-        {
-            for (int i = 0; i < GameObject.Find("Player").GetComponent<Player>().inventory.Length; i++)
-            {
-                if (GameObject.Find("Player").GetComponent<Player>().inventory[i].itemName == response.nameOfRetreivedItem && response.nameOfRetreivedItem != null)
-                {
-                    GameObject.Find("Player").GetComponent<Player>().inventory[i] = null;
-                    break;
-                }
-            }           
-
-            //gameObject.SetActive(false);
-        }
+        //if (nameOfRetreivedItemDialog != null)
+        //{
+        //    for (int i = 0; i < GameObject.Find("Player").GetComponent<Player>().inventory.Length; i++)
+        //    {
+        //        if (GameObject.Find("Player").GetComponent<Player>().inventory[i].itemName == nameOfRetreivedItemDialog && GameObject.Find("Player").GetComponent<Player>().inventory[i] != null)
+        //        {
+        //            //GameObject.Find("Player").GetComponent<Player>().inventory[i].itemName = "Default";
+        //            //Destroy(GameObject.Find("Player").GetComponent<Player>().inventory[i]);
+        //            break;
+        //        }
+        //    }                   
+        //    //gameObject.SetActive(false);
+        //}
 
         if(response.itemAddedToInventory != null)
         {

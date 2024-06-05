@@ -40,8 +40,8 @@ public class DialogManager : MonoBehaviour
     public Canvas canvas;
     public TMP_FontAsset customFont;
     public Sprite backgroundSprite;
-    private float backgroundWidth = 800f; // Width of the background
-    private float backgroundHeight = 800f; // Height of the background
+    private float backgroundWidth = 1077f; // Width of the background
+    private float backgroundHeight = 624f; // Height of the background
     private TextMeshProUGUI dialogText;
     private List<Button> responseButtons = new List<Button>();
     private GameObject backgroundObj; // Reference to the background GameObject
@@ -130,9 +130,9 @@ public class DialogManager : MonoBehaviour
         textObj.transform.SetParent(backgroundObj.transform, false); // Set the background as the parent
         dialogText = textObj.AddComponent<TextMeshProUGUI>();
         dialogText.fontSize = 24;
-        dialogText.color = Color.black;
+        dialogText.color = Color.white;
         dialogText.alignment = TextAlignmentOptions.Center;
-        dialogText.rectTransform.anchoredPosition = new Vector2(0, 200);
+        dialogText.rectTransform.anchoredPosition = new Vector2(0, 150);
         dialogText.rectTransform.sizeDelta = new Vector2(600, 200);
         dialogText.font = customFont;  // Assigning the custom font to dialog text
 
@@ -146,7 +146,7 @@ public class DialogManager : MonoBehaviour
             button.targetGraphic = buttonText;
             buttonText.text = "Option " + (i + 1);
             buttonText.fontSize = 20;
-            buttonText.color = Color.black;
+            buttonText.color = Color.white;
             buttonText.alignment = TextAlignmentOptions.Center;
             buttonText.font = customFont;  // Assigning the custom font to button text
             buttonObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(0,  - 50 * i * 3.5f);

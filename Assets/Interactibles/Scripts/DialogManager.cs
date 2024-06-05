@@ -233,7 +233,7 @@ public class DialogManager : MonoBehaviour
         {
             for (int i = 0; i < GameObject.Find("Player").GetComponent<Player>().inventory.Length; i++)
             {
-                if (GameObject.Find("Player").GetComponent<Player>().inventory[i].itemName == response.nameOfRetreivedItem)
+                if (GameObject.Find("Player").GetComponent<Player>().inventory[i].itemName == response.nameOfRetreivedItem && response.nameOfRetreivedItem != null)
                 {
                     GameObject.Find("Player").GetComponent<Player>().inventory[i] = null;
                     break;

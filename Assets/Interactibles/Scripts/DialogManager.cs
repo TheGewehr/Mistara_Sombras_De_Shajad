@@ -77,9 +77,29 @@ public class DialogManager : MonoBehaviour
 
     public void InitializeDialogUI()
     {
+
+        //TRYING SHIT
+        for (int i = 0; i < itemConditions.Count; i++)
+        {
+            if (itemConditions[i] != null)
+            {
+                for (int j = 0; j < GameObject.Find("Player").GetComponent<Player>().inventory.Length; j++)
+                {
+                    if (GameObject.Find("Player").GetComponent<Player>().inventory[j] == itemConditions[i].conditionItem)
+                    {
+                        currentDialogIndex = itemConditions[i].newDialogIndex;
+                        break;
+                    }
+                }
+            }
+        }
+
         // Destroy previous dialog UI elements if they exist
         if (backgroundObj != null) Destroy(backgroundObj);
         if (dialogText != null) Destroy(dialogText.gameObject);
+
+
+
         foreach (Button button in responseButtons)
         {
             if (button != null)

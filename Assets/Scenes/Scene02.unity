@@ -578,35 +578,35 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: c6c55545b7262ea4883a7748021de846, type: 3}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.size
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].text
-      value: El contenedor se mueve haciendo ruido
+      value: "\xA1Hola, se\xF1ora! \xBFQu\xE9 quieren?"
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[1].text
-      value: Hissss hissss
+      value: "\xA1Oh! Pero... \xBFpor qu\xE9 querr\xEDa hacer eso?"
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].text
-      value: Yessssshhhh. Quishas podriash ayudarme un poco, por favor.
+      value: "Hmm... \xBFde verdad?"
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].text
-      value: Ni yo she que shoy. Eshtoy un poco mareado...
+      value: No estoy seguro de que quiero hacer este cambio.
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].text
-      value: "\xBFEra eso un insulto?"
+      value: "Bueno... est\xE1 bien, aqu\xED ten\xE9is mi piruleta."
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[5].text
-      value: "AH. MUCHAS GRACIAS. Igualmente, \xBFpodr\xEDas ayudarme por favor?"
+      value: "Podr\xEDas, POR FAVOR, AYUDARME??"
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].text
-      value: Feo o no sigo teniendo sentimientos...
+      value: "Podr\xEDas, POR FAVOR, AYUDARME??"
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[7].text
@@ -618,15 +618,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].responses.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[1].responses.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.size
@@ -634,7 +634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[5].responses.Array.size
@@ -654,7 +654,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].responses.Array.data[0].responseText
-      value: "Ho....hola?? Hay alguien ah\xED?"
+      value: "Hola, peque\xF1a. \xBFTe gustar\xEDa intercambiar tu piruleta por esta
+        ca\xF1a de pescar?"
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].responses.Array.data[1].responseText
@@ -662,7 +663,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[1].responses.Array.data[0].responseText
-      value: Estas bien?
+      value: "Ver\xE1s, esta ca\xF1a de pescar es muy especial. \xA1Puede pescar
+        los peces m\xE1s grandes del r\xEDo!"
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[1].responses.Array.data[1].responseText
@@ -670,7 +672,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[0].responseText
-      value: Ayudar a Watts
+      value: "Absolutamente. Es una oferta \xFAnica."
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[1].responseText
@@ -678,19 +680,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[0].responseText
-      value: Casi que mejor que no lo sepas
+      value: "Est\xE1 bien, como t\xFA prefieras."
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[1].responseText
-      value: Interesante eres, eso seguro
+      value: Te aseguramos que no te vas a arrepentir.
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[0].responseText
-      value: "Que va, no lo dec\xEDa de esa manera(ayudar a Watts)"
+      value: Perfecto!
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[1].responseText
-      value: "Me refer\xEDa a que no hab\xEDa visto a algo tan....viscoso."
+      value: Te aseguramos que no te vas a arrepentir.
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[5].responses.Array.data[0].responseText
@@ -702,11 +704,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.data[0].responseText
-      value: No decir nada y ayudar a Watts
+      value: Ayudar a Watts
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.data[1].responseText
-      value: Si si, lo que tu digas
+      value: Salir corriendo
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[7].responses.Array.data[0].responseText
@@ -726,15 +728,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[0].isFinalResponse
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[0].isFinalResponse
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[0].isFinalResponse
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[4].responses.Array.data[1].isFinalResponse
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[5].responses.Array.data[0].isFinalResponse
@@ -778,7 +784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[0].badNextDialogIndex
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[1].badNextDialogIndex
@@ -786,7 +792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[0].badNextDialogIndex
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[1].badNextDialogIndex
@@ -794,15 +800,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[0].badNextDialogIndex
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[1].badNextDialogIndex
-      value: 5
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[5].responses.Array.data[1].badNextDialogIndex
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.data[1].badNextDialogIndex
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].responses.Array.data[0].goodNextDialogIndex
@@ -822,7 +832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[0].goodNextDialogIndex
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[1].goodNextDialogIndex
@@ -830,7 +840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[0].goodNextDialogIndex
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[1].goodNextDialogIndex
@@ -838,15 +848,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[0].goodNextDialogIndex
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[1].goodNextDialogIndex
-      value: 5
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[5].responses.Array.data[1].goodNextDialogIndex
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.data[1].goodNextDialogIndex
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[0].responses.Array.data[0].neutralNextDialogIndex
@@ -866,7 +880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[0].neutralNextDialogIndex
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[2].responses.Array.data[1].neutralNextDialogIndex
@@ -874,7 +888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[0].neutralNextDialogIndex
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[3].responses.Array.data[1].neutralNextDialogIndex
@@ -882,15 +896,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[0].neutralNextDialogIndex
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[4].responses.Array.data[1].neutralNextDialogIndex
-      value: 5
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
+      propertyPath: dialogs.Array.data[5].responses.Array.data[1].neutralNextDialogIndex
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1066924698897226668, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: dialogs.Array.data[6].responses.Array.data[1].neutralNextDialogIndex
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2468059182384803679, guid: a66bb6184a837e34eb69271fdd2e8bed, type: 3}
       propertyPath: m_FlipX
